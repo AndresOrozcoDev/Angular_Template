@@ -1,27 +1,29 @@
-# AngularTemplate
+# Angular Template
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
+This repository has the template (setup and architecture) for Angular projects. Angular version 13 is being used with LAZY LOADING.
 
-## Development server
+## Setup
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+The project configuration is based on Lazy Loading, the whole project is in the 'src' folder which consists of the following folders and files:
 
-## Code scaffolding
+- App: Folder where the main component that renders the application is located, the 'pages' folder where the pages that have their own routes will be placed and the 'shared' folder, which is a module where all the elements, components and shared styles will be placed .
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+For the management of good practices in CSS, the BEM methodology and the SMACSS methodology are being used.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Installation
 
-## Running unit tests
+Run project:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+  ng serve
+```
 
-## Running end-to-end tests
+Generate page and module:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+  ng generate module pages/[name_component] --route page/[name_component] --module app.module
+```
+## Authors
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- [@AndresOrozcoDev](https://github.com/AndresOrozcoDev)

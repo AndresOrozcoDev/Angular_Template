@@ -1,3 +1,5 @@
+@import '../../shared/styles/main.scss'; 
+
 .background {
     width: 100%;
     height: 100vh;
@@ -10,7 +12,7 @@
     max-width: 500px;
     height: auto;
     text-align: center;
-    color: #fff;
+    color: $white-color;
     
     &__resource {
         display: flex;
